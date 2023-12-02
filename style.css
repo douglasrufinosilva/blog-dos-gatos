@@ -245,6 +245,23 @@ footer p {
   }
 }
 
+/* Animações */
+
+header {
+  animation: move .4s;
+  --startY: -100%;
+}
+
+footer {
+  animation: move .4s;
+  --startY:100%;
+}
+@keyframes move {
+  from {
+    transform: translateY(var(--startY));
+  }
+}
+
 .main-img, .section-container, aside {
   animation: appear .6s var(--delay) backwards;
   --delay: .2s;
